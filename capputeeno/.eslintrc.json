@@ -1,6 +1,16 @@
 {
+
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "jest": true,
+    "node": true,
+  },
   "extends": [
     "next/core-web-vitals",
-    "plugin:storybook/recommended"
-  ]
+    "plugin:storybook/recommended",
+  ],
+  "rules": {
+    "@next/next/no-document-import-in-page": "off"
+  }
 }
